@@ -1,0 +1,16 @@
+.DS_Store
+
+# Ignore .venv folder
+.venv
+
+# Ignore all __pycache__ folders
+*/__pycache__
+
+# Ignore folders: augmented_images and augmented_masks
+dataset/augmented_images
+dataset/augmented_masks
+
+# Ignore images from train, test and val
+dataset/train/*
+dataset/test/*
+dataset/val/*
