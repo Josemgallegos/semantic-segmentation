@@ -11,7 +11,7 @@ Para crear un entorno virtual sigue los pasos:
 ```bash
 python -m venv .venv # Crear entorno virtual
 
-source .venv/Scripts/activate # Activar entorno virtual
+.\.venv\Scripts\Activate.ps1 # Activar entorno virtual
 ```
 
 > Mac & Linux
