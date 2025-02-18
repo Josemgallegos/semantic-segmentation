@@ -51,9 +51,8 @@ Usa labelme en el bash para abrir la aplicación de escritorio.
 Al abrir la aplicación de escritorio, selecciona la opción "Open Dir" en la parte superior izquierda para usar la carpeta con las imágenes para crear etiquetados y polígonos.
 
 ```bash
-
-
-pip install -r requirmentes.txt
+pip freeze > requirements.txt
+pip install -r requirements.txt
 ```
 
 ---
