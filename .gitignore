@@ -14,3 +14,7 @@ dataset/augmented_masks
 dataset/train/*
 dataset/test/*
 dataset/val/*
+jupyter/content/my-datasets/*
+
+# Ignore models
+models/
