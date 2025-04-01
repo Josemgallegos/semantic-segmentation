@@ -9,7 +9,7 @@ from albumentations.pytorch import ToTensorV2
 
 """ Configuración """
 MODEL_PATH = "../models/clasificacion4.pth" # Ruta al modelo entrenado
-IMAGE_PATH = "355.jpg" # Imagen de entrada
+IMAGE_PATH = "270.jpg" # Imagen de entrada
 NUM_CLASSES = 5 # Número de clases
 OUTPUT_PATH = "mascara_predicha_rgb.png"
 OUTPUT_SIZE = (680, 382)  # width x height
