@@ -18,3 +18,4 @@ jupyter/content/my-datasets/*
 
 # Ignore models
 models/
+best_models/
