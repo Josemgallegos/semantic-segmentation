@@ -19,3 +19,7 @@ jupyter/content/my-datasets/*
 # Ignore models
 models/
 best_models/
+
+# Ignore images extension
+*.jpg
+*.png
