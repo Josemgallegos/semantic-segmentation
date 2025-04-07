@@ -34,22 +34,6 @@ pip freeze > requirements.txt # Para guardar los requerimientos en un txt
 
 Para
 
-##
-
-```bash
-pip install labelme
-```
-
-## Uso de la aplicación
-
-```bash
-labelme
-```
-
-Usa labelme en el bash para abrir la aplicación de escritorio.
-
-Al abrir la aplicación de escritorio, selecciona la opción "Open Dir" en la parte superior izquierda para usar la carpeta con las imágenes para crear etiquetados y polígonos.
-
 ```bash
 pip freeze > requirements.txt
 pip install -r requirements.txt
