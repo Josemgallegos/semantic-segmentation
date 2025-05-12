@@ -1,42 +1,42 @@
-# Segmentación Segmántica
+# Segmentación Semántica
 
-## Instalación
+Este repositorio contiene implementaciones de varios modelos de segmentación semántica utilizados para clasificar píxeles en imágenes aéreas en diferentes categorías, tales como:
 
-### Crea un entorno virtual
+- Suelo expuesto  
+- Vegetación seca  
+- Vegetación verde
+- Agua (Considerar)
 
-Para crear un entorno virtual sigue los pasos:
+## Modelos Implementados
 
-> Windows
+El proyecto incluye implementaciones de los siguientes modelos:
 
-```bash
-python -m venv .venv # Crear entorno virtual
+- **UNet**: Arquitectura clásica en forma de U para segmentación de imágenes.
+- **DeepLabV3+**: Modelo avanzado de segmentación semántica que utiliza *atrous convolutions* para capturar contexto a múltiples escalas.
+- **SegFormer**: Modelo reciente basado en Transformers, diseñado para segmentación semántica eficiente y precisa.
 
-.\.venv\Scripts\Activate.ps1 # Activar entorno virtual
-```
+## Requisitos del Sistema
 
-> Mac & Linux
+- Python 3.8 o superior  
+- CUDA 12.x (para uso con GPU)  
+- GPU NVIDIA con al menos 8 GB de VRAM (recomendado para entrenamiento)  
 
-```bash
-python -m venv .venv # Crear entorno virtual
+## Estructura del Proyecto
 
-source .venv/bin/activate # Activar entorno virtual
-```
+```plaintext
+jupyter/
+│
+├── DeepLab.ipynb       # Implementación y entrenamiento de DeepLabV3+
+├── SegFormer.ipynb     # Implementación y entrenamiento de SegFormer
+├── UNet.ipynb          # Implementación y entrenamiento de UNet
+└── metrics.ipynb       # Evaluación y comparación de los modelos
 
-Activa el entorno virtual para instalar los requerimientos necesarios.
+models/
+│
+├── UNET.pth            # Modelo UNet entrenado
+├── DEEPLAB.pth         # Modelo DeepLabV3+ entrenado
+└── SEGFORMER.pth       # Modelo SegFormer entrenado
 
-Para
-
-```bash
-pip install -r requirements.txt # Para instalar los requerimientos del txt
-
-pip freeze > requirements.txt # Para guardar los requerimientos en un txt
-```
-
-Para
-
-```bash
-pip freeze > requirements.txt
-pip install -r requirements.txt
-```
-
----
+best_models/
+│
+└── *.pth               # Mejores checkpoints de entrenamiento
